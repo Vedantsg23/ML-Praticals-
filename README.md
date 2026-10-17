@@ -1,48 +1,18 @@
-# ML Practicals and Mini Project
+# Machine Learning Practicals
 
-This repository contains the email spam classification practical followed by the Uber fare prediction mini project. The mini project is listed last as requested.
+The reports are arranged in order. Practicals 1 and 2 are the Uber fare and email spam studies. Practicals 3 through 6 and Mini Project 7 are the supplied PDFs; these five files are included unchanged. The mini project is last.
 
-## 1. Email Spam Classification
+| No. | Report | PDF |
+|---:|---|---|
+| 1 | Uber Fare Prediction | [01_Practical_Uber_Fare_Prediction.pdf](output/pdf/01_Practical_Uber_Fare_Prediction.pdf) |
+| 2 | Email Spam Classification | [02_Practical_Email_Spam_Classification.pdf](output/pdf/02_Practical_Email_Spam_Classification.pdf) |
+| 3 | Bank Customer Churn with ANN | [03_Practical_Bank_Customer_Churn_ANN.pdf](output/pdf/03_Practical_Bank_Customer_Churn_ANN.pdf) |
+| 4 | Gradient Descent | [04_Practical_Gradient_Descent.pdf](output/pdf/04_Practical_Gradient_Descent.pdf) |
+| 5 | KNN Diabetes Classification | [05_Practical_KNN_Diabetes.pdf](output/pdf/05_Practical_KNN_Diabetes.pdf) |
+| 6 | K-Means Sales Data | [06_Practical_KMeans_Sales_Data.pdf](output/pdf/06_Practical_KMeans_Sales_Data.pdf) |
+| 7 | Mini Project: Stock Market | [07_Mini_Project_Stock_Market.pdf](output/pdf/07_Mini_Project_Stock_Market.pdf) |
 
-Notebook: 01_Practical_Email_Spam_Classification.ipynb
+## Dataset sources for Practicals 1 and 2
 
-Classifies the Kaggle email dataset as not spam (0) or spam (1) with K-Nearest Neighbors and a linear Support Vector Machine. Reports accuracy, balanced accuracy, spam precision, spam recall, F1-score, and confusion matrices.
-
-Results on the stratified 20% test split (random state 42):
-
-| Model | Accuracy | Spam precision | Spam recall | Spam F1 |
-| --- | ---: | ---: | ---: | ---: |
-| KNN (k=5) | 0.9140 | 0.8187 | 0.9033 | 0.8590 |
-| Linear SVM | 0.9729 | 0.9224 | 0.9900 | 0.9550 |
-
-## 2. Mini Project: Uber Fare Prediction
-
-Notebook: 02_Mini_Project_Uber_Fare_Prediction.ipynb
-
-Preprocesses the Uber Fares data, identifies fare outliers, checks correlations, trains Linear Regression and Random Forest Regression, and compares R², RMSE, and MAE.
-
-Results on the random 20% test split (random state 42):
-
-| Model | R² | RMSE (USD) | MAE (USD) |
-| --- | ---: | ---: | ---: |
-| Linear Regression | 0.6904 | 5.5376 | 2.3984 |
-| Random Forest | 0.8336 | 4.0603 | 1.8388 |
-
-## Setup
-
-Install dependencies with:
-
-    python -m pip install -r requirements.txt
-
-Open either notebook from the repository root in Jupyter and run the cells in order.
-
-## Datasets
-
-The source CSV files are not committed. Download them from Kaggle and place them in the Data directory:
-
-- Email Spam Classification: https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv — extract emails.csv to Data/emails.csv.
-- Uber Fares: https://www.kaggle.com/datasets/yasserh/uber-fares-dataset — extract uber.csv to Data/uber.csv.
-
-The email dataset is a pre-tokenized word-frequency table with an Email No. identifier and a Prediction label. The notebooks exclude identifiers from model features. Raw CSV files in Data are ignored by Git.
-
-See Data/README.md for the exact file placement.
+- Uber Fares Dataset: <https://www.kaggle.com/datasets/yasserh/uber-fares-dataset>
+- Email Spam Classification Dataset: <https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv>
